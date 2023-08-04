@@ -1,12 +1,13 @@
 import React from 'react'
 import { Text, View } from "native-base";
 import ButtonDefault from '../../atoms/buttons';
-
+import { NativeBaseProvider } from 'native-base';
 
 
 const RequestPay = () => {
 
     return(
+        <NativeBaseProvider>
         <View>
             <View>
                 <ButtonDefault type={"primary"} text={""}>Back</ButtonDefault>
@@ -14,7 +15,7 @@ const RequestPay = () => {
                 <Text>Solicitar pago</Text>
                 <ButtonDefault>Select currency</ButtonDefault>
             </View>
-            <View>
+            <                                                    View>
                 <Text>Mount</Text>
             </View>
 
@@ -26,6 +27,7 @@ const RequestPay = () => {
                 <ButtonDefault type={"primary"} text={""}>Reestablecer</ButtonDefault>
             </View>
         </View>
+        </NativeBaseProvider>
     )
 
 }

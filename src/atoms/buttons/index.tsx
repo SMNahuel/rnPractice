@@ -1,13 +1,8 @@
-import React from 'react';
-import { Button } from "native-base";
+import {Button, Container} from 'native-base';
+import {View} from 'react-native';
 
+const ButtonDefault = Props => {
+  return <Button>{Props.text}</Button>;
+};
 
-const ButtonDefault = (Props) =>{
-    return(
-        <>
-            <Button>{Props.text}</Button>    
-        </>
-    )
-}
-
-export default ButtonDefault
+export default ButtonDefault;
